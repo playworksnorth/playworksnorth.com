@@ -3,6 +3,8 @@
 Studio site for Playworks North. This is the only task list for the `playworks-north/` workspace.
 
 ## Decisions needed
+- [ ] Copyright wording before the Quebec registration exists: "© 2026 Playworks North" or "© 2026 Edouard Murat, doing business as Playworks North". Options in docs/BRANDING.md. Existing lines stay untouched until decided
+- [ ] ThirdAngle on itch.io: keep the thirdangle identity as a standalone brand, or add "by Playworks North" to the profile and pack pages
 - [x] 2026-09-07 Hosting: the IONOS VPS (74.208.9.220) that already runs edouardmurat.com, Eddy's call
 - [x] 2026-09-07 Scope of v1: single landing page (studio blurb, project cards, contact), Eddy can widen later
 
@@ -23,9 +25,11 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 - [ ] Review EN/FR copy in playworksnorth/core/views.py and locale/fr
 
 ## Studio admin (not site work, tracked here for now)
+- [x] 2026-09-08 Branding migration scoped: public branding only, repos and folders stay put. Roster: EdNoKa, ThirdAngle, ApexCoach, It Shall Pass, Everybody Hates Monday, GodotHire. Order and checklist in docs/BRANDING.md; per-project items live in each project's TODO.md
+- [ ] Logo for Playworks North (Envato AI tokens available), then reuse it for GitHub org avatar, itch.io profile, Bluesky, site favicon and social preview
 - [ ] Quebec registry name check (Registraire des entreprises), then enregistrement
 - [ ] Bluesky handle to @playworksnorth.com via DNS TXT record at IONOS
-- [ ] Change EdNoKa's Steam publisher name to Playworks North
+- [ ] Change EdNoKa's Steam developer and publisher name to Playworks North (support ticket in Steamworks, covers 3256100, demo 5182400 and DLC 4344180 at once). Until this lands, Reddit Indie Sunday titles keep "Edouard Murat" because the rule is to match the Steam field
 - [ ] Fill in GitHub org profile (avatar, description, URL)
 - [ ] Fill in itch.io playworksnorth profile
 
