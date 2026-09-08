@@ -4,17 +4,23 @@ Direction revised again 2026-09-08 (Eddy, after seeing a ChatGPT emblem with a G
 mark, no text needed at avatar size. Burnt orange (`#c8502c`) on cream
 (`#f6f3ec`), cream on dark (`#16150f`), matching the site palette.
 
+## Decision 2026-09-08 (evening)
+
+Eddy picked the **square-notch arrow** (Envato batch 2, right tile) and asked for a
+different colour. Colour is Claude's call: **glacier teal** `#0f8f87` on cream
+`#f6f3ec`, brightened to `#2fd0c3` on navy `#0b1622`. Burnt orange was only
+ever the site accent; the site should move to teal in one CSS change (see TODO).
+
 ## Files
 
-- `concepts/` : vector drafts, each in four forms (`_mark`, `_orange_on_cream`,
-  `_cream_on_dark`, `_badge`). Rendered together in `concept_sheet.png`
-  (columns: cream, dark, badge, badge at 32 px, badge at 16 px).
-  - `a_star_play`: four-point star whose east ray is a play triangle.
-  - `b_north_play`: play triangle pointing north over a ground bar. Reads as
-    an eject symbol, kept only for comparison.
-  - `c_star_play_wide`: same as A with a fatter body and wider triangle.
-- Final files (once picked): `logo.svg`, `logo-dark.svg`, `badge.svg`,
-  `favicon.ico`, `avatar-512.png`, `social-1200x630.png`. Not made yet.
+- `mark/mark.svg` : the mark alone, teal. Source of truth, hand-drawn geometry:
+  `M0,-46 L34,34 L9,34 L9,20 L-9,20 L-9,34 L-34,34 Z` on a 120 viewBox.
+- `mark/mark_on_cream.svg`, `mark/mark_on_dark.svg`, `mark/badge_teal.svg`,
+  `mark/badge_navy.svg` : dressings. `arrow_sheet.png` shows all four plus the
+  badges at 32 px and 16 px; the notch survives at 16 px.
+- Still to make: wordmark lockup (big PLAYWORKS, small NORTH between rules),
+  `favicon.ico`, `avatar-512.png`, `social-1200x630.png`.
+- The earlier play-button concepts were deleted.
 
 ## Envato session 2026-09-08
 
