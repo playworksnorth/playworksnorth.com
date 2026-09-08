@@ -105,7 +105,7 @@ free edition or on subscriptions bought through a reseller. The site's A
 records and the Bluesky TXT record are unaffected. The auto-created guest
 domain and test alias rows in the Domains list can be ignored.
 
-## Consolidating accounts (proposed 2026-09-08, waiting on Eddy)
+## Consolidating accounts (started 2026-09-08)
 
 Target: three places. IONOS for domain registrations, DNS and both servers.
 Google Workspace for every mailbox. GitHub for code.
@@ -131,3 +131,13 @@ Order:
 
 Decide on the way: edouardmurat.com mail (fold into Workspace unless an app
 sends through Mailgun). The second server is out of scope for this cleanup.
+
+Progress 2026-09-08: docs/dns/ holds the full record list of each domain as
+read from the Squarespace panel. All three domains are unlocked at Squarespace
+and their transfer codes requested (Squarespace emails them to the registrant,
+edouardmurat1@gmail.com). IONOS contracts: 106801127 "VPS Linux M" is the
+74.208.9.220 server (edouardmurat.com and godothire.com go there), 102502184
+"VPS Linux L" is the ednoka.com server. The IONOS transfer flow
+(my.ionos.com/domainshop/transfer?contract=...) asks for the auth code up
+front, prices a .com transfer at $9.50 for the first year, then $20/year, and
+adds a year to the registration.
