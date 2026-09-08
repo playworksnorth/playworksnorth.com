@@ -71,3 +71,36 @@ they are.
 - Bluesky handle via DNS TXT record.
 - Steam publisher name (support ticket, covers all EdNoKa app ids at once).
 - Logo, in progress 2026-09-08.
+
+## Google Workspace (studio mail under one roof)
+
+Proposed 2026-09-08, waiting on Eddy. Today the Workspace has ednoka.com as
+primary domain and godothire.com as a secondary domain, while
+contact@playworksnorth.com is an IONOS mailbox. Domains are free in Workspace,
+only user seats cost, so the whole studio fits in the one account.
+
+Target: playworksnorth.com primary, ednoka.com and godothire.com secondary,
+every product address an alias or a Google Group on one paid user.
+
+Order, so no mail is lost:
+
+1. Admin console, Account, Domains, Manage domains: add playworksnorth.com as
+   a **secondary domain** (not an alias), verify with the TXT record at IONOS.
+   The domain stays registered at IONOS; only mail moves.
+2. Create contact@playworksnorth.com in Workspace first, as an alias on the
+   main user or as a Group with a collaborative inbox.
+3. At IONOS DNS: replace the MX for playworksnorth.com with Google's single
+   MX (smtp.google.com), add Google's SPF and DKIM and a DMARC record, remove
+   the IONOS mail records. Send a test. Forward or download anything in the
+   IONOS mailbox, then delete it.
+4. Change the primary domain to playworksnorth.com (allow up to 48 h).
+   Existing addresses keep working; ednoka.com becomes secondary.
+5. Rename the main user to eddy@playworksnorth.com (the old address becomes an
+   alias) and set the organisation name to Playworks North.
+6. Audit seats: if contact@ednoka.com or the GodotHire address are separate
+   paid users, fold them into aliases or groups.
+
+Primary-domain change is supported on Business editions, not on the legacy
+free edition or on subscriptions bought through a reseller. The site's A
+records and the Bluesky TXT record are unaffected. The auto-created guest
+domain and test alias rows in the Domains list can be ignored.

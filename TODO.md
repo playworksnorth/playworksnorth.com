@@ -3,6 +3,7 @@
 Studio site for Playworks North. This is the only task list for the `playworks-north/` workspace.
 
 ## Decisions needed
+- [ ] Google Workspace: make playworksnorth.com the primary domain, ednoka.com and godothire.com secondary, move contact@playworksnorth.com from IONOS into Workspace. Ordered steps in docs/BRANDING.md, Google Workspace section
 - [ ] Copyright wording before the Quebec registration exists: "© 2026 Playworks North" or "© 2026 Edouard Murat, doing business as Playworks North". Options in docs/BRANDING.md. Existing lines stay untouched until decided
 - [ ] ThirdAngle on itch.io: keep the thirdangle identity as a standalone brand, or add "by Playworks North" to the profile and pack pages
 - [x] 2026-09-07 Hosting: the IONOS VPS (74.208.9.220) that already runs edouardmurat.com, Eddy's call
