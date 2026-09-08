@@ -104,3 +104,30 @@ Primary-domain change is supported on Business editions, not on the legacy
 free edition or on subscriptions bought through a reseller. The site's A
 records and the Bluesky TXT record are unaffected. The auto-created guest
 domain and test alias rows in the Domains list can be ignored.
+
+## Consolidating accounts (proposed 2026-09-08, waiting on Eddy)
+
+Target: three places. IONOS for domain registrations, DNS and both servers.
+Google Workspace for every mailbox. GitHub for code.
+
+Inventory 2026-09-08: Squarespace holds the registrations for ednoka.com,
+godothire.com and edouardmurat.com (DNS edited there, on Google nameservers).
+IONOS holds playworksnorth.com plus two servers: the VPS 74.208.9.220 serves
+playworksnorth.com, godothire.com and edouardmurat.com; a second server
+74.208.184.11 serves ednoka.com. Mail: ednoka.com and godothire.com on
+Workspace, edouardmurat.com on Mailgun, playworksnorth.com on Workspace (MX
+live 2026-09-08, SPF, DKIM, DMARC and the contact@ alias still to do).
+
+Order:
+1. Finish the playworksnorth.com mail move (section above).
+2. Registrar transfers Squarespace to IONOS, one domain at a time:
+   edouardmurat.com first as the rehearsal, then godothire.com, then
+   ednoka.com. Before each transfer, recreate its DNS records at IONOS (A,
+   Google MX, SPF, DKIM, verification TXT) so nothing blinks when the
+   nameservers switch. Unlock at Squarespace, get the auth code, start the
+   transfer at IONOS, approve the email. A few days each, adds a year.
+3. Close the Squarespace account.
+4. Change the Workspace primary domain to playworksnorth.com.
+
+Decide on the way: edouardmurat.com mail (fold into Workspace unless an app
+sends through Mailgun). The second server is out of scope for this cleanup.
