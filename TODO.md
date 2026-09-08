@@ -3,7 +3,7 @@
 Studio site for Playworks North. This is the only task list for the `playworks-north/` workspace.
 
 ## Decisions needed
-- [ ] Hosting: static on GitHub Pages vs. the existing IONOS VPS (74.208.9.220) that runs edouardmurat.com
+- [x] 2026-09-07 Hosting: the IONOS VPS (74.208.9.220) that already runs edouardmurat.com, Eddy's call
 - [ ] Scope of v1: single landing page (studio blurb, project cards for EdNoKa / ApexCoach / meditation game, contact) vs. multi-page
 
 ## v1
@@ -11,8 +11,10 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 - [ ] Landing page copy, EN and FR
 - [ ] Project cards with links (EdNoKa Steam page, ApexCoach)
 - [ ] Contact link (email) and social links (Bluesky, itch.io, GitHub org)
-- [ ] Deploy and point playworksnorth.com DNS at it (IONOS)
-- [ ] HTTPS
+- [ ] Server setup on the VPS: nginx vhost for playworksnorth.com, checkout in /root/playworksnorth.com, certbot for HTTPS
+- [ ] GitHub Actions deploy workflow (same shape as edouardmurat.com: SSH in, git pull, reload nginx); needs SSH_PRIVATE_KEY secret on the org repo
+- [ ] IONOS DNS: A record for playworksnorth.com and www pointing at 74.208.9.220
+
 
 ## Studio admin (not site work, tracked here for now)
 - [ ] Quebec registry name check (Registraire des entreprises), then enregistrement
