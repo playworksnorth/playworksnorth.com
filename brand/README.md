@@ -1,6 +1,6 @@
 # Playworks North logo
 
-Direction chosen 2026-09-08: **a north star that is also a play button**. One
+Direction revised 2026-09-08 (Eddy): **a north star on its own, no play button**. Bias toward a compass-rose star with a longer north ray so it is not a generic sparkle. The play-button drafts in `concepts/` are superseded. One
 mark, no text needed at avatar size. Burnt orange (`#c8502c`) on cream
 (`#f6f3ec`), cream on dark (`#16150f`), matching the site palette.
 
@@ -22,16 +22,14 @@ Tool: elements.envato.com/ai/ai-image-generator, style "Logo" or "Vector"
 if offered, square, 3 variations per prompt. Use the vector draft as a
 reference image where the tool accepts one.
 
-1. Minimal flat vector logo mark, a four-pointed north star whose right point
-   is a play button triangle, single solid burnt orange shape on an off-white
+1. Minimal flat vector logo mark, a four-pointed north star with a longer top ray, compass rose style, single solid burnt orange shape on an off-white
    background, no text, no gradient, no outline, centred, lots of negative
    space, geometric, app icon style.
 2. Same as 1, cream shape on a near-black background.
-3. Logo for an indie game studio called Playworks North, a north star merged
-   with a play button, flat vector, two colours only (burnt orange and
+3. Logo for an indie game studio called Playworks North, a single north star mark, flat vector, two colours only (burnt orange and
    cream), wordmark "Playworks North" in a clean geometric sans below the
    mark, no other elements.
-4. Exploration: the same north-star play button mark drawn with soft rounded
+4. Exploration: the same north star mark drawn with soft rounded
    corners, friendly but not childish, flat vector, single colour.
 
 Judge results at 16 px before anything else. Anything that only works large
