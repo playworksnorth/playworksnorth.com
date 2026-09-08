@@ -20,19 +20,19 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 
 
 ## v1 follow-ups
-- [ ] Move the site accent from burnt orange to the logo teal (#0f8f87 light, #2fd0c3 dark) in playworksnorth/core/static/core/style.css, and put the mark in the header next to the wordmark
+- [x] 2026-09-08 Site accent moved to the logo teal (#0f8f87 light, #2fd0c3 dark, links use a darker #0c7a73 on cream for contrast), mark inline in the header next to the name
 - [ ] Verify the EdNoKa Steam link points at the right app (3256100)
-- [ ] Favicon and social preview image
+- [x] 2026-09-08 Favicon (ico, svg, apple-touch-icon), Open Graph and Twitter card tags, social preview image; also added the i18n context processor so the html lang attribute is no longer empty
 - [ ] Review EN/FR copy in playworksnorth/core/views.py and locale/fr
 
 ## Studio admin (not site work, tracked here for now)
 - [x] 2026-09-08 Branding migration scoped: public branding only, repos and folders stay put. Roster: EdNoKa, ThirdAngle, ApexCoach, It Shall Pass, Everybody Hates Monday, GodotHire. Order and checklist in docs/BRANDING.md; per-project items live in each project's TODO.md
-- [ ] Logo for Playworks North: direction chosen 2026-09-08 (north star as a play button), three vector drafts in brand/concepts with a comparison sheet, Envato prompts in brand/README.md. Envato run done 2026-09-08: direction is now a GPS heading arrow pointing north (two good raster candidates in the Envato session, link in brand/README.md). Mark chosen and drawn 2026-09-08: square-notch arrow in glacier teal, brand/mark/mark.svg, passes the 16 px test. Wordmark lockups done 2026-09-08 in Sora, brand/wordmark (horizontal, stacked, light, dark, mono). Next: favicon, avatar and social image, then reuse for GitHub org avatar, itch.io profile, Bluesky, site favicon and social preview
+- [ ] Logo for Playworks North: direction chosen 2026-09-08 (north star as a play button), three vector drafts in brand/concepts with a comparison sheet, Envato prompts in brand/README.md. Envato run done 2026-09-08: direction is now a GPS heading arrow pointing north (two good raster candidates in the Envato session, link in brand/README.md). Mark chosen and drawn 2026-09-08: square-notch arrow in glacier teal, brand/mark/mark.svg, passes the 16 px test. Wordmark lockups done 2026-09-08 in Sora, brand/wordmark (horizontal, stacked, light, dark, mono). Export set done 2026-09-08 in brand/export (favicon, avatars 512 and 1024, social 1200x630) and wired into the site. Left: upload avatar-512.png to the GitHub org, itch.io profile and Bluesky (see the admin items below)
 - [ ] Quebec registry name check (Registraire des entreprises), then enregistrement
-- [ ] Bluesky handle to @playworksnorth.com via DNS TXT record at IONOS
+- [ ] Bluesky handle to @playworksnorth.com via DNS TXT record at IONOS, and set the avatar to brand/export/avatar-512.png
 - [ ] Change EdNoKa's Steam developer and publisher name to Playworks North (support ticket in Steamworks, covers 3256100, demo 5182400 and DLC 4344180 at once). Until this lands, Reddit Indie Sunday titles keep "Edouard Murat" because the rule is to match the Steam field
-- [ ] Fill in GitHub org profile (avatar, description, URL)
-- [ ] Fill in itch.io playworksnorth profile
+- [ ] Fill in GitHub org profile (avatar brand/export/avatar-512.png, description, URL)
+- [ ] Fill in itch.io playworksnorth profile (avatar brand/export/avatar-512.png)
 
 ## Done
 - [x] 2026-09-07 Name research (domains, Steam, CIPO trademarks): Playworks North chosen

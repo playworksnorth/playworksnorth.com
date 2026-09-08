@@ -23,7 +23,13 @@ ever the site accent; the site should move to teal in one CSS change (see TODO).
   (cream text, bright teal on navy) are the primary; `stacked_*` puts the mark
   above the text for square spaces; `*_mono*` are single colour with no
   background. `wordmark_sheet.png` shows all four with backgrounds.
-- Still to make: `favicon.ico`, `avatar-512.png`, `social-1200x630.png`.
+- `export/` : ready-to-upload files. `favicon.ico` (16, 32, 48) and
+  `favicon.svg` are the teal badge with a cream arrow, `apple-touch-icon.png`
+  is the same at 180 px. `avatar-512.png` and `avatar-1024.png` are the teal
+  badge for GitHub, itch.io, Bluesky and Steam; `avatar-512-navy.png` is the
+  navy one if a page needs it. `social-1200x630.png` is the stacked lockup on
+  navy for link previews. The site copies of the favicon set and social image
+  live in `playworksnorth/core/static/core/`.
 
 ## Wordmark 2026-09-08
 

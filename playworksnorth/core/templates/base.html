@@ -5,11 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}Playworks North{% endblock %}</title>
 <meta name="description" content="{% block description %}{% translate 'Playworks North is a Montreal studio making games and apps.' %}{% endblock %}">
+<link rel="icon" href="{% static 'core/favicon.ico' %}" sizes="16x16 32x32 48x48">
+<link rel="icon" href="{% static 'core/favicon.svg' %}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{% static 'core/apple-touch-icon.png' %}">
+<meta name="theme-color" content="#0f8f87">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Playworks North">
+<meta property="og:title" content="{% block og_title %}Playworks North{% endblock %}">
+<meta property="og:description" content="{% block og_description %}{% translate 'Playworks North is a Montreal studio making games and apps.' %}{% endblock %}">
+<meta property="og:url" content="{{ request.build_absolute_uri }}">
+<meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'core/social-1200x630.png' %}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="{% static 'core/style.css' %}">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="{% url 'core:home' %}">Playworks North</a>
+  <a class="brand" href="{% url 'core:home' %}"><svg class="mark" viewBox="-34 -46 68 80" width="22" height="26" aria-hidden="true"><path d="M0,-46 L34,34 L9,34 L9,20 L-9,20 L-9,34 L-34,34 Z" fill="currentColor"/></svg>Playworks North</a>
   <form class="lang" action="{% url 'set_language' %}" method="post">
     {% csrf_token %}
     <input type="hidden" name="next" value="{{ request.path }}">
