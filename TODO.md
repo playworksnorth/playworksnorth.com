@@ -11,7 +11,7 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 - [x] 2026-09-07 Landing page copy, EN and FR (first draft, placeholder blurbs for ApexCoach and It Shall Pass, please review)
 - [x] 2026-09-07 Project cards (EdNoKa with Steam link, ThirdAngle with itch.io link, ApexCoach and It Shall Pass marked in development)
 - [x] 2026-09-07 Contact link (hello@playworksnorth.com, mailbox still to create at IONOS) and social links (Bluesky, itch.io, GitHub org)
-- [ ] Run deploy/bootstrap.sh on the VPS as root (one time, see deploy/SERVER.md), then check https://playworksnorth.com in EN and FR
+- [x] 2026-09-08 Server bootstrapped by Eddy, site is live at https://playworksnorth.com in EN and FR over HTTPS
 - [x] 2026-09-07 GitHub Actions deploy workflow (.github/workflows/deploy.yml); first run fails until bootstrap has cloned the repo on the server
 - [x] 2026-09-07 IONOS DNS: A records for @ and www point at the VPS, verified resolving
 - [x] 2026-09-07 SSH_PRIVATE_KEY secret set on the GitHub repo
