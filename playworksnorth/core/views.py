@@ -42,7 +42,7 @@ SOCIALS = [
     {'label': 'GitHub', 'url': 'https://github.com/playworksnorth'},
 ]
 
-CONTACT_EMAIL = 'hello@playworksnorth.com'
+CONTACT_EMAIL = 'contact@playworksnorth.com'
 
 
 def home(request):

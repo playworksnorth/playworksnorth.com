@@ -10,7 +10,7 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 - [x] 2026-09-07 Stack: Django, same as edouardmurat.com (Eddy: all his websites use Django). Mirror its layout: project package + core app, gunicorn behind nginx as a systemd service, collectstatic on deploy
 - [x] 2026-09-07 Landing page copy, EN and FR (first draft, placeholder blurbs for ApexCoach and It Shall Pass, please review)
 - [x] 2026-09-07 Project cards (EdNoKa with Steam link, ThirdAngle with itch.io link, ApexCoach and It Shall Pass marked in development)
-- [x] 2026-09-07 Contact link (hello@playworksnorth.com, mailbox still to create at IONOS) and social links (Bluesky, itch.io, GitHub org)
+- [x] 2026-09-08 Contact link uses contact@playworksnorth.com, mailbox live at IONOS
 - [x] 2026-09-08 Server bootstrapped by Eddy, site is live at https://playworksnorth.com in EN and FR over HTTPS
 - [x] 2026-09-07 GitHub Actions deploy workflow (.github/workflows/deploy.yml); first run fails until bootstrap has cloned the repo on the server
 - [x] 2026-09-07 IONOS DNS: A records for @ and www point at the VPS, verified resolving
@@ -18,7 +18,6 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 
 
 ## v1 follow-ups
-- [ ] Create the hello@playworksnorth.com mailbox (or forward) at IONOS
 - [ ] Verify the EdNoKa Steam link points at the right app (3256100)
 - [ ] Favicon and social preview image
 - [ ] Review EN/FR copy in playworksnorth/core/views.py and locale/fr
