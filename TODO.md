@@ -13,7 +13,8 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 - [ ] Contact link (email) and social links (Bluesky, itch.io, GitHub org)
 - [ ] Server setup on the VPS: nginx vhost for playworksnorth.com, checkout in /root/playworksnorth.com, venv, gunicorn systemd unit (playworksnorth.service), certbot for HTTPS
 - [ ] GitHub Actions deploy workflow (same shape as edouardmurat.com: SSH in, git pull, pip install, collectstatic, restart playworksnorth.service); needs SSH_PRIVATE_KEY secret on the org repo
-- [ ] IONOS DNS: A record for playworksnorth.com and www pointing at 74.208.9.220
+- [x] 2026-09-07 IONOS DNS: A records for @ and www point at the VPS, verified resolving
+- [x] 2026-09-07 SSH_PRIVATE_KEY secret set on the GitHub repo
 
 
 ## Studio admin (not site work, tracked here for now)
