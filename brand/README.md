@@ -18,8 +18,25 @@ ever the site accent; the site should move to teal in one CSS change (see TODO).
 - `mark/mark_on_cream.svg`, `mark/mark_on_dark.svg`, `mark/badge_teal.svg`,
   `mark/badge_navy.svg` : dressings. `arrow_sheet.png` shows all four plus the
   badges at 32 px and 16 px; the notch survives at 16 px.
-- Still to make: wordmark lockup (big PLAYWORKS, small NORTH between rules),
-  `favicon.ico`, `avatar-512.png`, `social-1200x630.png`.
+- `wordmark/` : the lockups, text outlined to paths so no font is needed.
+  `lockup_light.svg` (mark left, ink text on cream) and `lockup_dark.svg`
+  (cream text, bright teal on navy) are the primary; `stacked_*` puts the mark
+  above the text for square spaces; `*_mono*` are single colour with no
+  background. `wordmark_sheet.png` shows all four with backgrounds.
+- Still to make: `favicon.ico`, `avatar-512.png`, `social-1200x630.png`.
+
+## Wordmark 2026-09-08
+
+Typeface **Sora** (OFL, SemiBold for PLAYWORKS at 0.05 em tracking, Medium for
+NORTH at 0.30 em). Picked over Montserrat (wider, generic) and Outfit (close
+second): Sora's squarer letters echo the square notch in the mark. PLAYWORKS
+cap height 42 against the mark's 80, NORTH cap height 15 between two 3 unit
+teal rules spanning the PLAYWORKS width. Still legible at 160 px wide.
+
+Regenerate with `python3 brand/tools/lockup.py <outdir> sora` (needs Inkscape
+and the Sora variable font in `~/.local/share/fonts`, fetched from the
+google/fonts repo). The script outlines the text through Inkscape, so the
+committed SVGs carry paths only.
 - The earlier play-button concepts were deleted.
 
 ## Envato session 2026-09-08
