@@ -1,0 +1,13 @@
+[Unit]
+Description=gunicorn for playworksnorth.com
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/root/playworksnorth.com/playworksnorth
+EnvironmentFile=/root/playworksnorth.com/.env
+ExecStart=/root/playworksnorth.com/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/playworksnorth.sock playworksnorth.wsgi:application
+
+[Install]
+WantedBy=multi-user.target

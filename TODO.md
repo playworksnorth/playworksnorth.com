@@ -4,18 +4,24 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 
 ## Decisions needed
 - [x] 2026-09-07 Hosting: the IONOS VPS (74.208.9.220) that already runs edouardmurat.com, Eddy's call
-- [ ] Scope of v1: single landing page (studio blurb, project cards for EdNoKa / ApexCoach / meditation game, contact) vs. multi-page
+- [x] 2026-09-07 Scope of v1: single landing page (studio blurb, project cards, contact), Eddy can widen later
 
 ## v1
 - [x] 2026-09-07 Stack: Django, same as edouardmurat.com (Eddy: all his websites use Django). Mirror its layout: project package + core app, gunicorn behind nginx as a systemd service, collectstatic on deploy
-- [ ] Landing page copy, EN and FR
-- [ ] Project cards with links (EdNoKa Steam page, ApexCoach)
-- [ ] Contact link (email) and social links (Bluesky, itch.io, GitHub org)
-- [ ] Server setup on the VPS: nginx vhost for playworksnorth.com, checkout in /root/playworksnorth.com, venv, gunicorn systemd unit (playworksnorth.service), certbot for HTTPS
-- [ ] GitHub Actions deploy workflow (same shape as edouardmurat.com: SSH in, git pull, pip install, collectstatic, restart playworksnorth.service); needs SSH_PRIVATE_KEY secret on the org repo
+- [x] 2026-09-07 Landing page copy, EN and FR (first draft, placeholder blurbs for ApexCoach and the meditation game, please review)
+- [x] 2026-09-07 Project cards (EdNoKa with Steam link, ApexCoach and meditation game marked in development)
+- [x] 2026-09-07 Contact link (hello@playworksnorth.com, mailbox still to create at IONOS) and social links (Bluesky, itch.io, GitHub org)
+- [ ] Run deploy/bootstrap.sh on the VPS as root (one time, see deploy/SERVER.md), then check https://playworksnorth.com in EN and FR
+- [x] 2026-09-07 GitHub Actions deploy workflow (.github/workflows/deploy.yml); first run fails until bootstrap has cloned the repo on the server
 - [x] 2026-09-07 IONOS DNS: A records for @ and www point at the VPS, verified resolving
 - [x] 2026-09-07 SSH_PRIVATE_KEY secret set on the GitHub repo
 
+
+## v1 follow-ups
+- [ ] Create the hello@playworksnorth.com mailbox (or forward) at IONOS
+- [ ] Verify the EdNoKa Steam link points at the right app (3256100)
+- [ ] Favicon and social preview image
+- [ ] Review EN/FR copy in playworksnorth/core/views.py and locale/fr
 
 ## Studio admin (not site work, tracked here for now)
 - [ ] Quebec registry name check (Registraire des entreprises), then enregistrement

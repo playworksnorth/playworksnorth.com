@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<section class="hero">
+  <h1>{% translate 'Games and apps, made in Montreal.' %}</h1>
+  <p class="lede">{% translate 'Playworks North is a small studio run by a gameplay programmer. We build things that are fun to play and pleasant to use, and we ship them.' %}</p>
+</section>
+
+<section class="projects" id="projects">
+  <h2>{% translate 'Projects' %}</h2>
+  <ul class="cards">
+    {% for p in projects %}
+    <li class="card">
+      <p class="meta"><span class="kind">{{ p.kind }}</span> <span class="status">{{ p.status }}</span></p>
+      <h3>{{ p.name }}</h3>
+      <p>{{ p.blurb }}</p>
+      {% if p.url %}<a class="button" href="{{ p.url }}" rel="noopener">{{ p.link_label }}</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="contact" id="contact">
+  <h2>{% translate 'Contact' %}</h2>
+  <p><a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
+  <ul class="socials">
+    {% for s in socials %}<li><a href="{{ s.url }}" rel="me noopener">{{ s.label }}</a></li>{% endfor %}
+  </ul>
+</section>
+{% endblock %}

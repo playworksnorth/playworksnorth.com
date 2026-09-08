@@ -18,3 +18,11 @@ Captured 2026-09-07 from the live box. The same server hosts edouardmurat.com an
 - HTTPS: `certbot --nginx -d playworksnorth.com -d www.playworksnorth.com` once DNS resolves.
 
 Files for the unit and vhost live in this directory; a one-time bootstrap script installs them.
+
+## Bootstrap (one time)
+
+On the VPS as root:
+
+    curl -fsSL https://raw.githubusercontent.com/playworksnorth/playworksnorth.com/main/deploy/bootstrap.sh | bash
+
+It clones the repo, builds the venv, writes `/root/playworksnorth.com/.env` (secret key, DEBUG=0; the unit loads it), installs the unit and vhost, and runs certbot. After that, every push to main deploys through the workflow.

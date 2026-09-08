@@ -1,0 +1,27 @@
+{% load static i18n %}<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Playworks North{% endblock %}</title>
+<meta name="description" content="{% block description %}{% translate 'Playworks North is a Montreal studio making games and apps.' %}{% endblock %}">
+<link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="{% url 'core:home' %}">Playworks North</a>
+  <form class="lang" action="{% url 'set_language' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ request.path }}">
+    {% get_current_language as CUR %}
+    {% for code, name in LANGUAGES %}
+      <button type="submit" name="language" value="{{ code }}" {% if code == CUR %}class="active" aria-current="true"{% endif %}>{{ code|upper }}</button>
+    {% endfor %}
+  </form>
+</header>
+<main>{% block content %}{% endblock %}</main>
+<footer class="site-footer">
+  <p>&copy; {% now "Y" %} Playworks North, {% translate 'Montreal' %}.</p>
+</footer>
+</body>
+</html>
