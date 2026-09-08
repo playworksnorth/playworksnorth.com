@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-08 06:35-0400\n"
+"POT-Creation-Date: 2026-09-08 06:49-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: core/templates/base.html:7
 msgid "Playworks North is a Montreal studio making games and apps."
-msgstr ""
+msgstr "Playworks North est un studio montréalais qui crée des jeux et des applications."
 "Playworks North est un studio montréalais qui crée des jeux et des "
 "applications."
 
@@ -34,9 +34,10 @@ msgstr "Des jeux et des applications, faits à Montréal."
 
 #: core/templates/core/home.html:6
 msgid ""
-"Playworks North is a small studio run by a gameplay programmer. We build "
-"things that are fun to play and pleasant to use, and we ship them."
-msgstr ""
+"Playworks North is a studio building games and apps that are fun to play and "
+"pleasant to use, and we ship them. Available for contract and collaboration "
+"work."
+msgstr "Playworks North est un studio qui crée des jeux et des applications amusants à jouer et agréables à utiliser, et qui les livre. Disponible pour des contrats et des collaborations."
 
 #: core/templates/core/home.html:10
 msgid "Projects"
@@ -69,7 +70,7 @@ msgstr "En développement"
 #: core/views.py:17
 msgid ""
 "A coaching companion that turns training plans into daily, doable steps."
-msgstr ""
+msgstr "Un compagnon d'entraînement qui transforme un plan en étapes quotidiennes réalisables."
 
 #: core/views.py:25
 msgid "A quiet game about breathing, attention, and letting the noise settle."
@@ -83,5 +84,4 @@ msgstr "Ressources de jeu"
 msgid ""
 "Isometric pixel art asset packs for game makers, starting with a classroom "
 "and a science lab."
-msgstr ""
-
+msgstr "Des packs de ressources pixel art isométriques pour les créateurs de jeux, à commencer par une salle de classe et un laboratoire."
