@@ -85,3 +85,6 @@ msgid ""
 "Isometric pixel art asset packs for game makers, starting with a classroom "
 "and a science lab."
 msgstr "Des packs de ressources pixel art isométriques pour les créateurs de jeux, à commencer par une salle de classe et un laboratoire."
+
+msgid "Language"
+msgstr "Langue"

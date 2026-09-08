@@ -23,14 +23,12 @@
 <body>
 <header class="site-header">
   <a class="brand" href="{% url 'core:home' %}"><svg class="mark" viewBox="-34 -46 68 80" width="22" height="26" aria-hidden="true"><path d="M0,-46 L34,34 L9,34 L9,20 L-9,20 L-9,34 L-34,34 Z" fill="currentColor"/></svg>Playworks North</a>
-  <form class="lang" action="{% url 'set_language' %}" method="post">
-    {% csrf_token %}
-    <input type="hidden" name="next" value="{{ request.path }}">
+  <nav class="lang" aria-label="{% translate 'Language' %}">
     {% get_current_language as CUR %}
     {% for code, name in LANGUAGES %}
-      <button type="submit" name="language" value="{{ code }}" {% if code == CUR %}class="active" aria-current="true"{% endif %}>{{ code|upper }}</button>
+      {% language code %}<a hreflang="{{ code }}" href="{% url 'core:home' %}" lang="{{ code }}" {% if code == CUR %}class="active" aria-current="true"{% endif %}>{{ code|upper }}</a>{% endlanguage %}
     {% endfor %}
-  </form>
+  </nav>
 </header>
 <main>{% block content %}{% endblock %}</main>
 <footer class="site-footer">

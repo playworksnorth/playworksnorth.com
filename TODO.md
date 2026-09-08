@@ -20,6 +20,7 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 
 
 ## v1 follow-ups
+- [x] 2026-09-08 EN button did nothing from the French page: Django's set_language cannot translate /fr/ back to / when the default language is unprefixed. Switcher is now plain links to the translated URL, with a regression test in core/tests.py
 - [x] 2026-09-08 Site accent moved to the logo teal (#0f8f87 light, #2fd0c3 dark, links use a darker #0c7a73 on cream for contrast), mark inline in the header next to the name
 - [ ] Verify the EdNoKa Steam link points at the right app (3256100)
 - [x] 2026-09-08 Favicon (ico, svg, apple-touch-icon), Open Graph and Twitter card tags, social preview image; also added the i18n context processor so the html lang attribute is no longer empty
