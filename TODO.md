@@ -8,8 +8,8 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 
 ## v1
 - [x] 2026-09-07 Stack: Django, same as edouardmurat.com (Eddy: all his websites use Django). Mirror its layout: project package + core app, gunicorn behind nginx as a systemd service, collectstatic on deploy
-- [x] 2026-09-07 Landing page copy, EN and FR (first draft, placeholder blurbs for ApexCoach and the meditation game, please review)
-- [x] 2026-09-07 Project cards (EdNoKa with Steam link, ApexCoach and meditation game marked in development)
+- [x] 2026-09-07 Landing page copy, EN and FR (first draft, placeholder blurbs for ApexCoach and It Shall Pass, please review)
+- [x] 2026-09-07 Project cards (EdNoKa with Steam link, ThirdAngle with itch.io link, ApexCoach and It Shall Pass marked in development)
 - [x] 2026-09-07 Contact link (hello@playworksnorth.com, mailbox still to create at IONOS) and social links (Bluesky, itch.io, GitHub org)
 - [ ] Run deploy/bootstrap.sh on the VPS as root (one time, see deploy/SERVER.md), then check https://playworksnorth.com in EN and FR
 - [x] 2026-09-07 GitHub Actions deploy workflow (.github/workflows/deploy.yml); first run fails until bootstrap has cloned the repo on the server

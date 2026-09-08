@@ -19,12 +19,20 @@ PROJECTS = [
         'link_label': '',
     },
     {
-        'name': _('Untitled meditation game'),
+        'name': 'It Shall Pass',
         'kind': _('Game'),
         'status': _('In development'),
         'blurb': _('A quiet game about breathing, attention, and letting the noise settle.'),
         'url': '',
         'link_label': '',
+    },
+    {
+        'name': 'ThirdAngle',
+        'kind': _('Game assets'),
+        'status': _('Released'),
+        'blurb': _('Isometric pixel art asset packs for game makers, starting with a classroom and a science lab.'),
+        'url': 'https://thirdangle.itch.io',
+        'link_label': 'itch.io',
     },
 ]
 
