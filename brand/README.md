@@ -1,6 +1,6 @@
 # Playworks North logo
 
-Direction revised 2026-09-08 (Eddy): **a north star on its own, no play button**. Bias toward a compass-rose star with a longer north ray so it is not a generic sparkle. The play-button drafts in `concepts/` are superseded. One
+Direction revised again 2026-09-08 (Eddy, after seeing a ChatGPT emblem with a GPS arrow): **a GPS navigation arrow pointing north**. A heading cursor is a notched triangle, so it reads as north, direction and a play button in one shape, with no gamepad. Eddy found the plain north star too generic and the emblems too complex. Bias toward a compass-rose star with a longer north ray so it is not a generic sparkle. The play-button drafts in `concepts/` are superseded. One
 mark, no text needed at avatar size. Burnt orange (`#c8502c`) on cream
 (`#f6f3ec`), cream on dark (`#16150f`), matching the site palette.
 
@@ -15,6 +15,10 @@ mark, no text needed at avatar size. Burnt orange (`#c8502c`) on cream
   - `c_star_play_wide`: same as A with a fatter body and wider triangle.
 - Final files (once picked): `logo.svg`, `logo-dark.svg`, `badge.svg`,
   `favicon.ico`, `avatar-512.png`, `social-1200x630.png`. Not made yet.
+
+## Envato session 2026-09-08
+
+Signed in at app.envato.com (Generate, Graphic mode, Solid background, 3 variations = 3 credits). Session "Burnt Orange North Star Logo": https://app.envato.com/generate/10bbe3b7-ed2d-46bc-a1e6-faa9f53b1620. Batch 1 (north star) came back as plain symmetric four-point stars, discard. Batch 2 (GPS arrow) produced two clean marks: a classic notched heading arrow and a narrower one with a square notch. One tile failed. 10 credits left, plan resets 2026-09-09. Next: redraw the notched arrow as SVG (it is four points and a notch, no tracing needed), test at 16 px, then wordmark.
 
 ## Envato AI prompts (needs Eddy signed in to Envato Elements in Chrome)
 

@@ -26,7 +26,7 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 
 ## Studio admin (not site work, tracked here for now)
 - [x] 2026-09-08 Branding migration scoped: public branding only, repos and folders stay put. Roster: EdNoKa, ThirdAngle, ApexCoach, It Shall Pass, Everybody Hates Monday, GodotHire. Order and checklist in docs/BRANDING.md; per-project items live in each project's TODO.md
-- [ ] Logo for Playworks North: direction chosen 2026-09-08 (north star as a play button), three vector drafts in brand/concepts with a comparison sheet, Envato prompts in brand/README.md. Blocked on Eddy signing in to Envato Elements in the Chrome profile Claude drives (the tab is open on the AI image generator). Then: generate, pick, vectorise, and reuse for GitHub org avatar, itch.io profile, Bluesky, site favicon and social preview
+- [ ] Logo for Playworks North: direction chosen 2026-09-08 (north star as a play button), three vector drafts in brand/concepts with a comparison sheet, Envato prompts in brand/README.md. Envato run done 2026-09-08: direction is now a GPS heading arrow pointing north (two good raster candidates in the Envato session, link in brand/README.md). Next: redraw as SVG, 16 px test, wordmark, then and reuse for GitHub org avatar, itch.io profile, Bluesky, site favicon and social preview
 - [ ] Quebec registry name check (Registraire des entreprises), then enregistrement
 - [ ] Bluesky handle to @playworksnorth.com via DNS TXT record at IONOS
 - [ ] Change EdNoKa's Steam developer and publisher name to Playworks North (support ticket in Steamworks, covers 3256100, demo 5182400 and DLC 4344180 at once). Until this lands, Reddit Indie Sunday titles keep "Edouard Murat" because the rule is to match the Steam field
