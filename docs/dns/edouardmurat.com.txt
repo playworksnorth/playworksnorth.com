@@ -1,0 +1,25 @@
+# edouardmurat.com DNS snapshot 2026-09-08
+edouardmurat.com.	21600	IN	NS	ns-cloud-c1.googledomains.com.
+edouardmurat.com.	21600	IN	NS	ns-cloud-c2.googledomains.com.
+edouardmurat.com.	21600	IN	NS	ns-cloud-c3.googledomains.com.
+edouardmurat.com.	21600	IN	NS	ns-cloud-c4.googledomains.com.
+edouardmurat.com.	14400	IN	A	74.208.9.220
+edouardmurat.com.	14400	IN	MX	10 mxa.mailgun.org.
+edouardmurat.com.	14400	IN	MX	10 mxb.mailgun.org.
+edouardmurat.com.	14400	IN	TXT	"v=spf1 include:mailgun.org ~all"
+edouardmurat.com.	21600	IN	SOA	ns-cloud-c1.googledomains.com. cloud-dns-hostmaster.google.com. 5 21600 3600 259200 300
+www.edouardmurat.com.	14400	IN	A	74.208.9.220
+
+# Authoritative list from the Squarespace DNS panel (2026-09-08)
+# Squarespace Email Forwarding preset:
+MX    @   10  mxa.mailgun.org
+MX    @   10  mxb.mailgun.org
+TXT   @       v=spf1 include:mailgun.org ~all
+# Squarespace Domain Connect preset (drop after transfer):
+CNAME _domainconnect  _domainconnect.domains.squarespace.com
+# Custom records:
+A     @    74.208.9.220
+A     www  74.208.9.220
+CNAME 7ly5zfk6gfow  gv-z2qccaotiud2gf.dv.googlehosted.com   (Google cert validation, likely stale)
+CNAME yo72k636k67y  gv-h47hvwuc7zcrmv.dv.googlehosted.com   (Google cert validation, likely stale)
+TXT   k1._domainkey  k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDi/cTrExfz+gUDnc3gN19iNg643dnF1jIQ3C67uZet9nBT8BMYLOjZqiIm1QiVuDUnqb8nWu6HGciJWQk9Z0KsYw0jbqFesmg83wjlIiULUrDyinnWPFywp8ELfxhrxok21j+2SNINCo0mhlKpoBRR/Z5h4bq9VL+JXaPk415y/wIDAQAB   (Mailgun DKIM)
