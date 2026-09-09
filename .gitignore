@@ -11,3 +11,5 @@ __pycache__/
 staticfiles/
 db.sqlite3
 *.pyc
+.board.html
+.board.hash

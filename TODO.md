@@ -1,3 +1,24 @@
+<!-- BOARD
+url: https://claude.ai/code/artifact/0208e1db-2079-4291-a32c-dad01186385e
+headline: Site has been live at https://playworksnorth.com in EN and FR since 2026-09-08. The contact form was fixed 2026-09-09: the mailbox didn't exist until Google Workspace's MX cutover, so mail was silently dropped, then landed in spam once it did; it now sends as website@playworksnorth.com with SPF/DKIM/DMARC in place and delivers. Three domain transfers (edouardmurat.com, godothire.com, ednoka.com) are mid-flight from Squarespace to IONOS, due to complete by 2026-09-13 unless cancelled. Brand assets (mark, wordmark, exports) are finished and wired into the site; studio branding is rolling out project by project (EdNoKa, ThirdAngle, Zenith Caller, It Shall Pass, Everybody Hates Monday, GodotHire).
+now:
+- P1 Domain transfers land by 2026-09-13: recreate DNS at IONOS from docs/dns/<domain>.txt the same day each one completes, then verify with dig
+- P1 Google Workspace migration: SPF/DKIM/DMARC all resolving; left is watching the DMARC rua reports, moving p=none to quarantine/reject once clean, then switching playworksnorth.com to the primary domain
+- P2 Upload the finished avatar (brand/export/avatar-512.png) to the GitHub org, itch.io profile and Bluesky; point the Bluesky handle at playworksnorth.com via DNS TXT
+- P2 Verify the EdNoKa Steam card links to app 3256100; review EN/FR copy in playworksnorth/core/views.py and locale/fr
+- P2 Swap the Zenith Caller and It Shall Pass project cards for real screenshots once each project has one
+review:
+- id: copyright-wording
+  ask: "© 2026 Playworks North" or "© 2026 Edouard Murat, doing business as Playworks North"? Pick before the Quebec registration exists; existing copyright lines stay untouched until decided.
+  since: 2026-09-09
+- id: thirdangle-branding
+  ask: Keep the thirdangle identity standalone on itch.io, or add "by Playworks North" to the profile and pack pages?
+  since: 2026-09-09
+- id: steam-publisher-rename
+  ask: Change EdNoKa's Steam developer/publisher name to Playworks North (one Steamworks support ticket covers 3256100, demo 5182400 and DLC 4344180). Until it lands, Reddit Indie Sunday titles keep "Edouard Murat" to match the live Steam field.
+  since: 2026-09-09
+-->
+
 # playworksnorth.com TODO
 
 Studio site for Playworks North. This is the only task list for the `playworks-north/` workspace.
