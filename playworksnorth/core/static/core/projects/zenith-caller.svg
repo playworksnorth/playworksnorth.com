@@ -1,22 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 254">
-  <!-- Zenith Caller card: the project's own chevron, not the studio teal.
-       The chevron is the settled half of its mark (only the container is
-       still open, see ZenithCaller TODO review: icon-direction), so the card
-       uses the chevron alone. Colour is the app's own: a hot signal red-orange
-       on near-black, reading as Apex rather than as the website. -->
+  <!-- Zenith Caller card: the project's finished mark, in the project's own
+       colours, not the studio teal. The mark is the hexagon settled on
+       2026-09-09 (one shape at three scales, hollow shifted down 8); the
+       source of truth is ZenithCaller/art/brand/build_icon.py, which
+       generates icon.svg, and the path below is that file's path verbatim.
+       If the mark is retuned there, this card needs the same edit.
+       Colours are ZenithCaller palette entries: mint #6fcdb0, badge ground
+       #0f1317, panel #232b30. The Apex red was tried and rejected for this
+       mark on 2026-09-09; do not reintroduce it here. -->
   <defs>
     <linearGradient id="zc-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#181014"/>
-      <stop offset="1" stop-color="#0C0B0D"/>
+      <stop offset="0" stop-color="#232b30"/>
+      <stop offset="1" stop-color="#0f1317"/>
     </linearGradient>
     <radialGradient id="zc-glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#FF5A36" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#FF5A36" stop-opacity="0"/>
+      <stop offset="0" stop-color="#6fcdb0" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#6fcdb0" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="508" height="254" fill="url(#zc-bg)"/>
-  <ellipse cx="254" cy="112" rx="175" ry="100" fill="url(#zc-glow)"/>
-  <g transform="translate(122,-5) scale(2.2)">
-    <path fill="#FF5A36" d="M 60,36 L 92,68 L 92,84 L 60,52 L 28,84 L 28,68 Z"/>
+  <ellipse cx="254" cy="123" rx="185" ry="105" fill="url(#zc-glow)"/>
+  <g transform="translate(170,41.8) scale(1.4)">
+    <path fill="#6fcdb0" fill-rule="evenodd"
+          d="M 60.00,4.00 L 106.77,31.00 L 106.77,85.00 L 60.00,112.00 L 13.23,85.00 L 13.23,31.00 Z M 60.00,24.00 L 80.78,36.00 L 80.78,60.00 L 68.66,67.00 L 87.71,78.00 L 87.71,96.00 L 60.00,112.00 L 32.29,96.00 L 32.29,78.00 L 51.34,67.00 L 39.22,60.00 L 39.22,36.00 Z"/>
   </g>
 </svg>
