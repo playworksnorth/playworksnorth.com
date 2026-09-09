@@ -158,3 +158,34 @@ records must be recreated at IONOS the day each domain lands:
 3. Check with `dig +short <domain> A`, `MX`, `TXT`, and www.
 4. Turn on IONOS domain lock (Domain Guard is optional, it is a paid add-on).
 
+
+## Where contact@playworksnorth.com actually lives (settled 2026-09-09)
+
+The site's contact form mails contact@playworksnorth.com, and for a day that
+address existed nowhere reachable: IONOS had created a Mail Basic mailbox for
+it on 2026-09-08, but the MX was switched to Google (smtp.google.com) the same
+day, so mail routed to Workspace, where no such user, alias or group existed.
+Messages were accepted by the relay and then dropped, and the bounce went to
+the same dead address, so nothing was ever seen.
+
+Fixed 2026-09-09 by adding contact@playworksnorth.com as an **alternate email
+(alias) on the single Workspace user**, whose primary address is
+contact@ednoka.com. That user now holds:
+
+- contact@ednoka.com (primary)
+- contact@godothire.com (alias, pre-existing)
+- contact@playworksnorth.com (alias, added 2026-09-09)
+
+So **contact form mail lands in the contact@ednoka.com inbox**, not in
+edouardmurat1@gmail.com. That stays true until the Workspace primary domain
+switches to playworksnorth.com, at which point these addresses just swap roles.
+
+Outgoing mail for the form uses the Workspace SMTP relay service (Gmail >
+Routing > SMTP relay service), whose rule already allowlists the site's server
+74.208.9.220 (listed there as "GodotHire server"), with no SMTP auth. That is
+why the form needs no mail password. Django points EMAIL_HOST at
+smtp-relay.gmail.com; the only secrets in the server .env are the reCAPTCHA
+keys.
+
+Still missing for this domain: SPF, DKIM and DMARC records. Until SPF exists,
+form mail is more likely to be treated as spam by anyone it is forwarded to.
