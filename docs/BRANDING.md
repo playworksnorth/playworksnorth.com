@@ -141,3 +141,20 @@ edouardmurat1@gmail.com). IONOS contracts: 106801127 "VPS Linux M" is the
 (my.ionos.com/domainshop/transfer?contract=...) asks for the auth code up
 front, prices a .com transfer at $9.50 for the first year, then $20/year, and
 adds a year to the registration.
+
+Transfers started 2026-09-08 (order confirmations from IONOS for all three,
+Squarespace emails say each transfer completes on its own by 2026-09-13
+unless cancelled). IONOS was told to switch each domain to its own name
+servers on arrival, and Squarespace deletes the zone at that moment, so the
+records must be recreated at IONOS the day each domain lands:
+
+1. my.ionos.com/domain-dns-settings/<domain>: delete the IONOS defaults
+   (parking A/AAAA, IONOS MX, autodiscover CNAMEs).
+2. Add every line from docs/dns/<domain>.txt except the _domainconnect CNAME
+   and the stale dv.googlehosted.com CNAMEs. ednoka.com and godothire.com
+   need the five Google MX, SPF, the google-site-verification TXT(s), and
+   for ednoka.com the google._domainkey DKIM TXT. edouardmurat.com needs the
+   two Mailgun MX, SPF and k1._domainkey.
+3. Check with `dig +short <domain> A`, `MX`, `TXT`, and www.
+4. Turn on IONOS domain lock (Domain Guard is optional, it is a paid add-on).
+
