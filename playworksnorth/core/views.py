@@ -11,12 +11,12 @@ PROJECTS = [
         'link_label': 'Steam',
     },
     {
-        'name': 'ApexCoach',
+        'name': 'Zenith Caller',
         'kind': _('App'),
         'status': _('In development'),
         'blurb': _('A coaching companion that turns training plans into daily, doable steps.'),
-        'url': '',
-        'link_label': '',
+        'url': 'https://zenithcaller.com',
+        'link_label': _('Site'),
     },
     {
         'name': 'It Shall Pass',

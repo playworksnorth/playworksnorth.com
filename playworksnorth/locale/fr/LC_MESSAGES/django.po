@@ -88,3 +88,7 @@ msgstr "Des packs de ressources pixel art isométriques pour les créateurs de j
 
 msgid "Language"
 msgstr "Langue"
+
+#: core/views.py:19
+msgid "Site"
+msgstr "Site"

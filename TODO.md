@@ -27,6 +27,7 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 - [ ] Verify the EdNoKa Steam link points at the right app (3256100)
 - [x] 2026-09-08 Favicon (ico, svg, apple-touch-icon), Open Graph and Twitter card tags, social preview image; also added the i18n context processor so the html lang attribute is no longer empty
 - [ ] Review EN/FR copy in playworksnorth/core/views.py and locale/fr
+- [x] 2026-09-09 Project card renamed ApexCoach -> Zenith Caller, now links to https://zenithcaller.com (new "Site" button label, translated in locale/fr). The blurb is still the 2026-09-07 placeholder and does not describe the app (a live voice coach for Apex Legends), so it is covered by the copy review above
 
 ## Studio admin (not site work, tracked here for now)
 - [x] 2026-09-08 Branding migration scoped: public branding only, repos and folders stay put. Roster: EdNoKa, ThirdAngle, ApexCoach, It Shall Pass, Everybody Hates Monday, GodotHire. Order and checklist in docs/BRANDING.md; per-project items live in each project's TODO.md

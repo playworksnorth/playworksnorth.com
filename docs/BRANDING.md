@@ -12,7 +12,7 @@ the per-project items in that project's own `TODO.md` so its board shows them.
 | --- | --- | --- | --- |
 | 1 | EdNoKa | Live on Steam, Next Fest in October | Steam (3256100, demo 5182400, DLC 4344180), ednoka.com |
 | 2 | ThirdAngle | Live on itch.io | thirdangle.itch.io |
-| 3 | ApexCoach | Ships next, has a LICENSE | Nothing yet |
+| 3 | Zenith Caller | Ships next, has a LICENSE | zenithcaller.com |
 | 4 | It Shall Pass | In development | Nothing yet |
 | 5 | Everybody Hates Monday | In development | Nothing yet |
 | 6 | GodotHire | Live site, no attribution today | godothire.com |
