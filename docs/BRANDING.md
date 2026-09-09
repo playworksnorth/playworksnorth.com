@@ -187,5 +187,15 @@ why the form needs no mail password. Django points EMAIL_HOST at
 smtp-relay.gmail.com; the only secrets in the server .env are the reCAPTCHA
 keys.
 
-Still missing for this domain: SPF, DKIM and DMARC records. Until SPF exists,
-form mail is more likely to be treated as spam by anyone it is forwarded to.
+Authentication records added at IONOS 2026-09-09, all three verified live:
+
+- SPF    TXT @                    v=spf1 include:_spf.google.com ~all
+- DKIM   TXT google._domainkey    2048-bit key generated in Admin console
+                                  (Gmail > Authenticate email), published
+                                  byte-for-byte and then switched on with
+                                  "Start authentication"
+- DMARC  TXT _dmarc               v=DMARC1; p=none; rua=mailto:contact@playworksnorth.com
+
+DMARC is deliberately p=none (monitor only) to start. Move it to p=quarantine
+and then p=reject once the rua reports show only legitimate senders passing;
+tightening it before that would send real mail to spam.
