@@ -47,8 +47,8 @@
       {{ form.message }}
     </div>
     <div class="hp-field" aria-hidden="true">
-      <label for="{{ form.company.id_for_label }}">{{ form.company.label }}</label>
-      {{ form.company }}
+      <label for="{{ form.hp_field.id_for_label }}">{{ form.hp_field.label }}</label>
+      {{ form.hp_field }}
     </div>
     <div class="g-recaptcha" data-sitekey="{{ recaptcha_site_key }}"></div>
     <button class="button" type="submit">{% translate 'Send' %}</button>
