@@ -79,7 +79,11 @@ def contact_submit(request):
                 try:
                     EmailMessage(
                         subject=_('New message from %(name)s via playworksnorth.com') % {'name': form.cleaned_data['name']},
-                        body=form.cleaned_data['message'],
+                        body='From: %s <%s>\n\n%s' % (
+                            form.cleaned_data['name'],
+                            form.cleaned_data['email'],
+                            form.cleaned_data['message'],
+                        ),
                         from_email=settings.DEFAULT_FROM_EMAIL,
                         to=[settings.CONTACT_RECIPIENT_EMAIL],
                         reply_to=[form.cleaned_data['email']],

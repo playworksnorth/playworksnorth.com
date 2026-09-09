@@ -143,7 +143,10 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
 CONTACT_RECIPIENT_EMAIL = os.environ.get('CONTACT_RECIPIENT_EMAIL', 'contact@playworksnorth.com')
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL') or CONTACT_RECIPIENT_EMAIL
+# Must differ from the recipient: mail addressed from and to the same account,
+# carrying a stranger's Reply-To, was classified as "blatant spam" by Gmail.
+# The relay accepts any address in the domain, so this needs no mailbox.
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'website@playworksnorth.com')
 
 # Google's published "always passes" v2 checkbox test keys, so the form works
 # locally before real keys are wired up. Real keys come from
