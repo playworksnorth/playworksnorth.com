@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load i18n %}
+{% load i18n static %}
 {% block content %}
 <section class="hero">
   <h1>{% translate 'Games and apps, made in Montreal.' %}</h1>
@@ -10,11 +10,16 @@
   <h2>{% translate 'Projects' %}</h2>
   <ul class="cards">
     {% for p in projects %}
-    <li class="card">
-      <p class="meta"><span class="kind">{{ p.kind }}</span> <span class="status">{{ p.status }}</span></p>
-      <h3>{{ p.name }}</h3>
-      <p>{{ p.blurb }}</p>
-      {% if p.url %}<a class="button" href="{{ p.url }}" rel="noopener">{{ p.link_label }}</a>{% endif %}
+    <li>
+      {% if p.url %}<a class="card" href="{{ p.url }}" rel="noopener">{% else %}<div class="card is-static">{% endif %}
+        <div class="card-image"><img src="{% static p.image %}" alt="" loading="lazy"></div>
+        <div class="card-body">
+          <p class="meta"><span class="kind">{{ p.kind }}</span> <span class="status">{{ p.status }}</span></p>
+          <h3>{{ p.name }}</h3>
+          <p>{{ p.blurb }}</p>
+          {% if p.url %}<span class="card-link">{{ p.link_label }} &rarr;</span>{% endif %}
+        </div>
+      {% if p.url %}</a>{% else %}</div>{% endif %}
     </li>
     {% endfor %}
   </ul>

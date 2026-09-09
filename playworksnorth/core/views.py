@@ -9,6 +9,7 @@ PROJECTS = [
         'blurb': _('A word-building puzzle game where you carve new words out of old ones.'),
         'url': 'https://store.steampowered.com/app/3256100/',
         'link_label': 'Steam',
+        'image': 'core/projects/ednoka.jpg',
     },
     {
         'name': 'Zenith Caller',
@@ -17,6 +18,7 @@ PROJECTS = [
         'blurb': _('A coaching companion that turns training plans into daily, doable steps.'),
         'url': 'https://zenithcaller.com',
         'link_label': _('Site'),
+        'image': 'core/projects/zenith-caller.svg',
     },
     {
         'name': 'It Shall Pass',
@@ -25,6 +27,7 @@ PROJECTS = [
         'blurb': _('A quiet game about breathing, attention, and letting the noise settle.'),
         'url': '',
         'link_label': '',
+        'image': 'core/projects/it-shall-pass.svg',
     },
     {
         'name': 'ThirdAngle',
@@ -33,6 +36,7 @@ PROJECTS = [
         'blurb': _('Isometric pixel art asset packs for game makers, starting with a classroom and a science lab.'),
         'url': 'https://thirdangle.itch.io',
         'link_label': 'itch.io',
+        'image': 'core/projects/thirdangle.png',
     },
 ]
 
