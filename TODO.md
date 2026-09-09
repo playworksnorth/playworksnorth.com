@@ -29,7 +29,8 @@ Studio site for Playworks North. This is the only task list for the `playworks-n
 - [x] 2026-09-08 Favicon (ico, svg, apple-touch-icon), Open Graph and Twitter card tags, social preview image; also added the i18n context processor so the html lang attribute is no longer empty
 - [ ] Review EN/FR copy in playworksnorth/core/views.py and locale/fr
 - [x] 2026-09-09 Project cards redesigned: real key art per card (EdNoKa's Steam header, ThirdAngle's itch.io cover) or a branded placeholder (Zenith Caller, It Shall Pass), whole card is the link with a hover lift, no separate Steam/Site button. Deployed. The first grid was wrong on desktop (auto-fit gave 3 columns for 4 cards, stranding the last one), now an explicit 1/2-column grid
-- [ ] Swap Zenith Caller and It Shall Pass placeholder card art (playworksnorth/core/static/core/projects/) for real screenshots once each has one
+- [x] 2026-09-09 It Shall Pass card art is now the game's real logo, not a placeholder: the torii mark with its amber ember, on the game's own night field. Colours are GamePalette entries rather than the studio teal (night blue #101428 to #0A0A14, cyan #84E2E8, ember #F0A860), so the card looks like the game and not like the site. Source of truth for the mark is it-shall-pass/art/brand/icon.svg; if that changes, this card needs the same edit
+- [ ] Swap the Zenith Caller placeholder card art (playworksnorth/core/static/core/projects/) for a real screenshot once it has one
 - [x] 2026-09-09 Project card renamed ApexCoach -> Zenith Caller, now links to https://zenithcaller.com (new "Site" button label, translated in locale/fr). The blurb is still the 2026-09-07 placeholder and does not describe the app (a live voice coach for Apex Legends), so it is covered by the copy review above
 
 ## Studio admin (not site work, tracked here for now)
