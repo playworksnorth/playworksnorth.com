@@ -199,3 +199,17 @@ Authentication records added at IONOS 2026-09-09, all three verified live:
 DMARC is deliberately p=none (monitor only) to start. Move it to p=quarantine
 and then p=reject once the rua reports show only legitimate senders passing;
 tightening it before that would send real mail to spam.
+
+Delivery was still not the end of it. Once the alias existed, Gmail accepted
+the form mail and then filed it as spam, logged verbatim as "blatant spam"
+in Admin console > Reporting > Email Log Search. Cause: the form sent From
+and To the same address (contact@playworksnorth.com), carrying a stranger's
+Reply-To and free text from a public form, which reads as spoofing. Fixed
+2026-09-09 by sending as website@playworksnorth.com, an address with no
+mailbox (the relay allows any address in the domain), and Eddy marked the
+trapped messages as not spam.
+
+Email Log Search is the tool for any future "where did that mail go" question:
+it shows the SMTP conversation, the delivery result, and the spam verdict per
+recipient, which the sending side cannot see. A form that reports success only
+proves the relay accepted the message, not that anyone received it.
