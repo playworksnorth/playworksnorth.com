@@ -27,9 +27,35 @@
 
 <section class="contact" id="contact">
   <h2>{% translate 'Contact' %}</h2>
-  <p><a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
+  {% if messages %}
+  <ul class="form-messages">
+    {% for message in messages %}<li class="{{ message.tags }}">{{ message }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+  <form class="contact-form" method="post" action="{% url 'core:contact_submit' %}">
+    {% csrf_token %}
+    <div class="field">
+      <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+      {{ form.name }}
+    </div>
+    <div class="field">
+      <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+      {{ form.email }}
+    </div>
+    <div class="field">
+      <label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label>
+      {{ form.message }}
+    </div>
+    <div class="hp-field" aria-hidden="true">
+      <label for="{{ form.company.id_for_label }}">{{ form.company.label }}</label>
+      {{ form.company }}
+    </div>
+    <div class="g-recaptcha" data-sitekey="{{ recaptcha_site_key }}"></div>
+    <button class="button" type="submit">{% translate 'Send' %}</button>
+  </form>
   <ul class="socials">
     {% for s in socials %}<li><a href="{{ s.url }}" rel="me noopener">{{ s.label }}</a></li>{% endfor %}
   </ul>
 </section>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 {% endblock %}
