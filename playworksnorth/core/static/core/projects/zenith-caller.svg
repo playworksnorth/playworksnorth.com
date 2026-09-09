@@ -1,13 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 254">
+  <!-- Zenith Caller card: the project's own chevron, not the studio teal.
+       The chevron is the settled half of its mark (only the container is
+       still open, see ZenithCaller TODO review: icon-direction), so the card
+       uses the chevron alone. Colour is the app's own: a hot signal red-orange
+       on near-black, reading as Apex rather than as the website. -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1622"/>
-      <stop offset="1" stop-color="#0f8f87"/>
+    <linearGradient id="zc-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#181014"/>
+      <stop offset="1" stop-color="#0C0B0D"/>
     </linearGradient>
+    <radialGradient id="zc-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF5A36" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#FF5A36" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="508" height="254" fill="url(#bg)"/>
-  <circle cx="120" cy="127" r="34" fill="none" stroke="#2fd0c3" stroke-width="2" opacity=".55"/>
-  <circle cx="120" cy="127" r="60" fill="none" stroke="#2fd0c3" stroke-width="2" opacity=".35"/>
-  <circle cx="120" cy="127" r="86" fill="none" stroke="#2fd0c3" stroke-width="2" opacity=".2"/>
-  <path d="M120,-46 L154,34 L129,34 L129,20 L111,20 L111,34 L86,34 Z" fill="#f6f3ec" transform="translate(0,93)"/>
+  <rect width="508" height="254" fill="url(#zc-bg)"/>
+  <ellipse cx="254" cy="112" rx="175" ry="100" fill="url(#zc-glow)"/>
+  <g transform="translate(122,-5) scale(2.2)">
+    <path fill="#FF5A36" d="M 60,36 L 92,68 L 92,84 L 60,52 L 28,84 L 28,68 Z"/>
+  </g>
 </svg>
