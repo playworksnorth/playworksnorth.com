@@ -27,11 +27,13 @@ main, .site-header, .site-footer { max-width: 62rem; margin: 0 auto; padding: 0 
 .hero h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.1; margin: 0 0 1rem; }
 .lede { font-size: 1.2rem; color: var(--muted); max-width: 40rem; margin: 0; }
 h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 3rem 0 1rem; }
-.cards { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.cards { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+@media (min-width: 40rem) { .cards { grid-template-columns: repeat(2, 1fr); } }
+.cards > li { display: flex; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: .9rem;
   display: flex; flex-direction: column; overflow: hidden; text-decoration: none; color: inherit;
-  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  width: 100%; transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 a.card:hover, a.card:focus-visible {
   transform: translateY(-.25rem);
