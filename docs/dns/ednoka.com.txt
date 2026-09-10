@@ -19,3 +19,13 @@ google._domainkey.ednoka.com. 1800 IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0
 # plus CNAME _domainconnect -> _domainconnect.domains.squarespace.com (drop after transfer)
 # and CNAME j7nfcbk2a6xn -> gv-oawuv3ziwxtjur.dv.googlehosted.com (Google cert validation, likely stale).
 # Must recreate at IONOS: A @, A www, 5 MX, SPF TXT, google-site-verification TXT, google._domainkey DKIM TXT.
+
+# 2026-09-10, from the first playworksnorth.com DMARC report: this SPF record is
+# wrong for how the domain actually sends. ednoka.com sends through Google
+# Workspace (see the five Google MX above), but the record lists only Mailgun and
+# ends in ?all, so every message it sends is SPF neutral rather than pass. It also
+# made one playworksnorth.com message SPF-neutral, because the Workspace user is
+# contact@ednoka.com and the envelope sender follows the primary domain.
+# When recreating this zone at IONOS, publish the corrected record instead:
+#   v=spf1 include:_spf.google.com include:mailgun.org a mx ~all
+# (keep mailgun only if ednoka.com still sends through Mailgun; drop it if not.)

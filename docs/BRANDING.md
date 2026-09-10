@@ -200,6 +200,27 @@ DMARC is deliberately p=none (monitor only) to start. Move it to p=quarantine
 and then p=reject once the rua reports show only legitimate senders passing;
 tightening it before that would send real mail to spam.
 
+Reading the rua reports. They arrive as a ZIP holding one XML file, named
+<reporter>!<domain>!<start epoch>!<end epoch>.zip, one per reporter per UTC
+day. Unzip and read the XML: each <record> is one sending IP, <count> is how
+many messages it sent, and the pair that matters is <policy_evaluated> (did
+DKIM and SPF pass *and* align with the header From) next to <auth_results>
+(the raw result and which domain it was checked against). DMARC passes if
+either column aligns and passes, so a DKIM pass alone is a pass.
+
+First report, google.com for 2026-09-09 (received 2026-09-10): 4 messages,
+all from Google outbound IPs, DKIM pass and aligned on all 4, so 100% DMARC
+pass and no sign of anyone spoofing the domain. Three of the four also passed
+SPF. The fourth was SPF neutral because its envelope sender was on ednoka.com,
+whose SPF record is "v=spf1 include:mailgun.org a mx ?all" and so neither
+authorises Google's servers nor aligns with a playworksnorth.com From. That is
+the alias showing through: the one Workspace user is contact@ednoka.com and
+playworksnorth.com hangs off it, so some paths still stamp the envelope with
+the primary domain. It disappears when playworksnorth.com becomes the primary
+domain, and the ednoka.com SPF record should gain include:_spf.google.com
+regardless (see docs/dns/ednoka.com.txt) since that domain sends through
+Workspace today and is neutral for every message it sends.
+
 Delivery was still not the end of it. Once the alias existed, Gmail accepted
 the form mail and then filed it as spam, logged verbatim as "blatant spam"
 in Admin console > Reporting > Email Log Search. Cause: the form sent From
