@@ -212,11 +212,15 @@ Authentication records added at IONOS 2026-09-09, all three verified live:
                                   (Gmail > Authenticate email), published
                                   byte-for-byte and then switched on with
                                   "Start authentication"
-- DMARC  TXT _dmarc               v=DMARC1; p=none; rua=mailto:contact@playworksnorth.com
+- DMARC  TXT _dmarc               v=DMARC1; p=quarantine; rua=mailto:contact@playworksnorth.com
+                                  (p=none until 2026-09-11)
 
-DMARC is deliberately p=none (monitor only) to start. Move it to p=quarantine
-and then p=reject once the rua reports show only legitimate senders passing;
-tightening it before that would send real mail to spam.
+DMARC started at p=none (monitor only) and moved to p=quarantine on
+2026-09-11, verified with dig on the IONOS nameservers, 1.1.1.1 and 8.8.8.8.
+p=reject comes once later rua reports keep showing only legitimate senders
+passing. Anything new that sends as playworksnorth.com (a newsletter tool, a
+second SMTP path) must be DKIM-signed for the domain or listed in SPF before
+it goes live, or its mail now lands in spam.
 
 Reading the rua reports. They arrive as a ZIP holding one XML file, named
 <reporter>!<domain>!<start epoch>!<end epoch>.zip, one per reporter per UTC
@@ -244,7 +248,9 @@ A report only exists for a day the domain sent mail. Admin console > Reporting
 run 2026-09-11: 4 messages, all on 2026-09-09 (contact-form tests, two from
 contact@ and two from website@), nothing on 2026-09-10 or 2026-09-11. The
 contact form is the domain's only sender, so reports stay rare until real
-visitors use it, and "wait for more clean days" can wait a long time.
+visitors use it, and "wait for more clean days" can wait a long time. So
+Eddy moved DMARC to p=quarantine the same day on the strength of the one
+clean report: Workspace is the only sender and every message DKIM-aligned.
 
 Delivery was still not the end of it. Once the alias existed, Gmail accepted
 the form mail and then filed it as spam, logged verbatim as "blatant spam"
