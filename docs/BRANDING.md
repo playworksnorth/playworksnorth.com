@@ -61,8 +61,17 @@ by Edouard Murat, not a legal entity. Two options for copyright lines:
 - `© 2026 Playworks North` (short, matches what players see)
 - `© 2026 Edouard Murat, doing business as Playworks North` (legally precise)
 
-Decision pending in the site `TODO.md`. Until decided, leave existing lines as
-they are.
+Decided 2026-09-09: `© 2026 Playworks North`.
+
+Filed 2026-09-10: the trade name registered with the Registraire des entreprises
+is "Studio Playworks North", with "Playworks North Studio" as its English version
+(reference 020200137407928, pending the Registraire's name analysis). A French
+generic is mandatory in front of an English name (REQ guide IN-531, section 5.3),
+so bare "Playworks North" cannot be registered unless it becomes a
+CIPO-registered trademark. The business is still Edouard Murat's sole
+proprietorship (NEQ 2278365210) with no separate legal personality, so the
+copyright holder is still Edouard Murat. Whether the copyright line should
+follow the registered form is a review item in the site `TODO.md`.
 
 ## Studio-wide surfaces (not per project)
 
