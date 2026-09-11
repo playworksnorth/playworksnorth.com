@@ -9,7 +9,7 @@ now:
 - P1 Google Workspace migration: first DMARC report (2026-09-09, read 2026-09-10) is clean, 4 messages, 100% DKIM-aligned pass, no spoofing. Two or three more clean days, then move p=none to p=quarantine. Then the primary domain switch, which also clears the one SPF-neutral message
 - P2 ednoka.com SPF is wrong (Mailgun only, ?all) even though the domain sends through Workspace: publish v=spf1 include:_spf.google.com include:mailgun.org a mx ~all when its zone is recreated at IONOS
 - P2 Upload the finished avatar (brand/export/avatar-512.png) to the GitHub org, itch.io profile and Bluesky; point the Bluesky handle at playworksnorth.com via DNS TXT
-- P2 Verify the EdNoKa Steam card links to app 3256100; review EN/FR copy in playworksnorth/core/views.py and locale/fr
+- P2 Review EN/FR copy in playworksnorth/core/views.py and locale/fr (the Steam card link to app 3256100 was verified 2026-09-10)
 - P2 Swap the Zenith Caller and It Shall Pass project cards for real screenshots once each project has one
 - P2 Quebec REQ declaration 020200137407928 (autre nom "Studio Playworks North", English version "Playworks North Studio", on NEQ 2278365210) went Publiée three minutes after filing on 2026-09-10. The public registry already shows the new activities, sole bénéficiaire ultime and no employees, but holds the name in "Nom(s) en traitement": it joins Autres noms utilisés au Québec only once the Registraire's analysis finds it compliant (a few weeks; it writes only on refusal). Then search the public registry by NEQ, confirm the name shows En vigueur, and tick the Studio admin item. Do not file a demande de réservation de nom (see that item)
 review:
