@@ -38,6 +38,9 @@ msgstr "Langue"
 msgid "Montreal"
 msgstr "Montréal"
 
+msgid "Playworks North Studio"
+msgstr "Studio Playworks North"
+
 msgid "Games and apps, made in Montreal."
 msgstr "Des jeux et des applications, faits à Montréal."
 

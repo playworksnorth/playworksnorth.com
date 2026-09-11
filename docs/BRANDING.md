@@ -37,7 +37,7 @@ surface does not exist yet, and add it back the day the surface appears.
 
 ### Build metadata (Godot)
 - [ ] `export_presets.cfg`: `application/company_name="Playworks North"` and
-      `application/copyright="© <year> Playworks North"` on every preset.
+      `application/copyright="© <year> Playworks North Studio"` on every preset.
 - [ ] Any HTML5 export template with an `owner` or `author` string.
 
 ### Repo files
@@ -48,7 +48,8 @@ surface does not exist yet, and add it back the day the surface appears.
 
 ### In the product
 - [ ] Credits screen or about dialog names Playworks North.
-- [ ] Website footer: "© <year> Playworks North" or "a Playworks North project".
+- [ ] Website footer: "© <year> Playworks North Studio" (French pages:
+      "© <year> Studio Playworks North") or "a Playworks North project".
 - [ ] Marketing posts use the studio name wherever the storefront already does.
       Reddit Indie Sunday titles must match the Steam developer field, so that
       post copy changes only after Steam does.
@@ -70,8 +71,16 @@ generic is mandatory in front of an English name (REQ guide IN-531, section 5.3)
 so bare "Playworks North" cannot be registered unless it becomes a
 CIPO-registered trademark. The business is still Edouard Murat's sole
 proprietorship (NEQ 2278365210) with no separate legal personality, so the
-copyright holder is still Edouard Murat. Whether the copyright line should
-follow the registered form is a review item in the site `TODO.md`.
+copyright holder is still Edouard Murat.
+
+Decided 2026-09-10, replacing the 2026-09-09 call: copyright lines follow the
+registered name. English: `© 2026 Playworks North Studio`. French:
+`© 2026 Studio Playworks North`. LICENSE files, README paragraphs and Godot
+export presets are English, so they take the English form; a bilingual surface
+(this site's footer) uses each form on its own language. The brand players see
+stays plain Playworks North: the site header, store pages and the
+playworksnorth.com domain do not change. If the Registraire refuses the name,
+copyright lines follow whatever name replaces it.
 
 ## Studio-wide surfaces (not per project)
 

@@ -21,3 +21,18 @@ class LanguageSwitchTests(TestCase):
     def test_following_the_english_link_serves_english(self):
         r = self.client.get('/', HTTP_ACCEPT_LANGUAGE='fr', HTTP_COOKIE='django_language=fr')
         self.assertContains(r, '<html lang="en"')
+
+
+class CopyrightLineTests(TestCase):
+    """The footer names the copyright holder by the trade name registered with
+    the Registraire des entreprises du Québec, which has a French form and an
+    English version, so each language gets its own. The brand in the header
+    stays plain Playworks North."""
+
+    def test_english_footer_uses_registered_english_name(self):
+        r = self.client.get('/')
+        self.assertContains(r, 'Playworks North Studio, Montreal.')
+
+    def test_french_footer_uses_registered_french_name(self):
+        r = self.client.get('/fr/')
+        self.assertContains(r, 'Studio Playworks North, Montréal.')
