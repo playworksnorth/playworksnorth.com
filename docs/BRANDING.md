@@ -239,6 +239,13 @@ domain, and the ednoka.com SPF record should gain include:_spf.google.com
 regardless (see docs/dns/ednoka.com.txt) since that domain sends through
 Workspace today and is neutral for every message it sends.
 
+A report only exists for a day the domain sent mail. Admin console > Reporting
+> Email Log Search, custom search, sender "playworksnorth.com", last 7 days,
+run 2026-09-11: 4 messages, all on 2026-09-09 (contact-form tests, two from
+contact@ and two from website@), nothing on 2026-09-10 or 2026-09-11. The
+contact form is the domain's only sender, so reports stay rare until real
+visitors use it, and "wait for more clean days" can wait a long time.
+
 Delivery was still not the end of it. Once the alias existed, Gmail accepted
 the form mail and then filed it as spam, logged verbatim as "blatant spam"
 in Admin console > Reporting > Email Log Search. Cause: the form sent From
