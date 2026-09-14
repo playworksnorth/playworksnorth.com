@@ -32,15 +32,6 @@ PROJECTS = [
         'image': 'core/projects/zenith-caller.svg',
     },
     {
-        'name': 'It Shall Pass',
-        'kind': _('Game'),
-        'status': _('In development'),
-        'blurb': _('A quiet game about breathing, attention, and letting the noise settle.'),
-        'url': '',
-        'link_label': '',
-        'image': 'core/projects/it-shall-pass.svg',
-    },
-    {
         'name': 'ThirdAngle',
         'kind': _('Game assets'),
         'status': _('Released'),
@@ -57,6 +48,15 @@ PROJECTS = [
         'url': 'https://godothire.com',
         'link_label': _('Site'),
         'image': 'core/projects/godothire.svg',
+    },
+    {
+        'name': 'It Shall Pass',
+        'kind': _('Game'),
+        'status': _('In development'),
+        'blurb': _('A quiet game about breathing, attention, and letting the noise settle.'),
+        'url': '',
+        'link_label': '',
+        'image': 'core/projects/it-shall-pass.svg',
     },
 ]
 
