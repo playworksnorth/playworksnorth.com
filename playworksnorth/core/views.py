@@ -49,6 +49,15 @@ PROJECTS = [
         'link_label': 'itch.io',
         'image': 'core/projects/thirdangle.png',
     },
+    {
+        'name': 'GodotHire',
+        'kind': _('Job board'),
+        'status': _('Live'),
+        'blurb': _('A job board for the Godot game engine community, connecting studios with Godot developers.'),
+        'url': 'https://godothire.com',
+        'link_label': _('Site'),
+        'image': 'core/projects/godothire.svg',
+    },
 ]
 
 SOCIALS = [
