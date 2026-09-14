@@ -150,8 +150,13 @@ Order:
 Decide on the way: edouardmurat.com mail (fold into Workspace unless an app
 sends through Mailgun). The second server is out of scope for this cleanup.
 
-Progress 2026-09-08: docs/dns/ holds the full record list of each domain as
-read from the Squarespace panel. All three domains are unlocked at Squarespace
+Progress 2026-09-08: the full record list of each domain, as read from the
+Squarespace panel, was captured in docs/dns/. On 2026-09-14 each sheet moved
+to the repo that owns its domain, so the DNS work is tracked in one place per
+project: ednoka.com in EdNoKa_Server/ednoka_server/deploy/dns_ednoka_com.md
+(which also carries the SPF and DMARC corrections), godothire.com in
+godothire/docs/dns/godothire.com.txt, edouardmurat.com in
+edouardmurat.com/docs/dns/edouardmurat.com.txt. All three domains are unlocked at Squarespace
 and their transfer codes requested (Squarespace emails them to the registrant,
 edouardmurat1@gmail.com). IONOS contracts: 106801127 "VPS Linux M" is the
 74.208.9.220 server (edouardmurat.com and godothire.com go there), 102502184
@@ -168,7 +173,7 @@ records must be recreated at IONOS the day each domain lands:
 
 1. my.ionos.com/domain-dns-settings/<domain>: delete the IONOS defaults
    (parking A/AAAA, IONOS MX, autodiscover CNAMEs).
-2. Add every line from docs/dns/<domain>.txt except the _domainconnect CNAME
+2. Add every line from the domain's record sheet (paths above) except the _domainconnect CNAME
    and the stale dv.googlehosted.com CNAMEs. ednoka.com and godothire.com
    need the five Google MX, SPF, the google-site-verification TXT(s), and
    for ednoka.com the google._domainkey DKIM TXT. edouardmurat.com needs the
@@ -240,7 +245,7 @@ the alias showing through: the one Workspace user is contact@ednoka.com and
 playworksnorth.com hangs off it, so some paths still stamp the envelope with
 the primary domain. It disappears when playworksnorth.com becomes the primary
 domain, and the ednoka.com SPF record should gain include:_spf.google.com
-regardless (see docs/dns/ednoka.com.txt) since that domain sends through
+regardless (record 8 of EdNoKa_Server's dns_ednoka_com.md) since that domain sends through
 Workspace today and is neutral for every message it sends.
 
 A report only exists for a day the domain sent mail. Admin console > Reporting
