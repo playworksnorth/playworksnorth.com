@@ -27,8 +27,9 @@ surface does not exist yet, and add it back the day the surface appears.
 
 ### Storefronts
 - [ ] Steam: developer and publisher fields say Playworks North on every app id
-      (base, demo, DLC). Changing the publisher name in Steamworks is a support
-      ticket, not a form field. Tracked in the site TODO under "Studio admin".
+      (base, demo, DLC). No support ticket needed: in Steamworks, unlink the
+      creator homepage, rename, relink, then publish each app (how EdNoKa did
+      it, 2026-09-28).
 - [ ] itch.io: page shows "by Playworks North", or the project's own identity
       is a deliberate decision recorded in its TODO.
 - [ ] App stores: publisher display name only. **Never change an iOS bundle
@@ -87,7 +88,7 @@ copyright lines follow whatever name replaces it.
 - GitHub org profile: avatar, description, URL.
 - itch.io playworksnorth profile.
 - Bluesky handle via DNS TXT record.
-- Steam publisher name (support ticket, covers all EdNoKa app ids at once).
+- Steam publisher name: done 2026-09-28 in Steamworks, all three EdNoKa app ids.
 - Logo, in progress 2026-09-08.
 
 ## Google Workspace (studio mail under one roof)
