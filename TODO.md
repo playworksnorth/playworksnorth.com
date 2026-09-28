@@ -11,12 +11,6 @@ now:
 - P2 Swap the Zenith Caller, It Shall Pass and GodotHire project cards for real screenshots once each project has one
 - P2 (done 2026-09-20) Quebec REQ declaration 020200137407928 (autre nom "Studio Playworks North", English version "Playworks North Studio", on NEQ 2278365210) went Publiée three minutes after filing on 2026-09-10. **Checked the public registry by NEQ on 2026-09-20: the name now shows under Autres noms utilisés au Québec with Situation "En vigueur"** (declared 2026-09-10, no retrait date), so the Registraire's analysis passed and the name is fully registered. Nothing left to watch here.
 review:
-- id: service-prices (withdrawn 2026-09-26 with the service, kept one day for the trail)
-  ask: Godot-to-Steam tiers at $750 and $1,500 CAD or USD? (USD reads better on Reddit and itch;
-  CAD is simpler for invoicing.) And the pilot: first two clients at $500 for a written testimonial,
-  yes or no? Also: contact form only, or Stripe deposit links up front? Below $30K/yr revenue no
-  GST/QST registration is needed; the doc will say prices are before tax either way.
-  since: 2026-09-26
 -->
 
 # playworksnorth.com TODO
