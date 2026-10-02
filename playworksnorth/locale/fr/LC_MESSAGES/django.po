@@ -115,11 +115,11 @@ msgstr "La vérification anti-robot a échoué. Veuillez réessayer."
 msgid "Please fill in every field and try again."
 msgstr "Veuillez remplir tous les champs et réessayer."
 
-msgid "Eddy Murat, founder of Playworks North"
-msgstr "Eddy Murat, fondateur de Playworks North"
+msgid "Edouard Murat, founder of Playworks North"
+msgstr "Edouard Murat, fondateur de Playworks North"
 
 msgid "Who builds this"
 msgstr "Qui est derrière le studio"
 
-msgid "Playworks North is run by Eddy Murat, a Montreal-based developer who builds and ships every project on this page."
-msgstr "Playworks North est dirigé par Eddy Murat, un développeur montréalais qui crée et livre chacun des projets de cette page."
+msgid "Playworks North is run by Edouard Murat, a Montreal-based developer who builds and ships every project on this page."
+msgstr "Playworks North est dirigé par Edouard Murat, un développeur montréalais qui crée et livre chacun des projets de cette page."
