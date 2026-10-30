@@ -145,7 +145,15 @@ Order:
    Google MX, SPF, DKIM, verification TXT) so nothing blinks when the
    nameservers switch. Unlock at Squarespace, get the auth code, start the
    transfer at IONOS, approve the email. A few days each, adds a year.
-3. Close the Squarespace account.
+3. Close the Squarespace account. Before closing: sign in (the account came
+   from the Google Domains migration, so probably "Continue with Google" as
+   edouardmurat1@gmail.com; no Squarespace identity is in accounts.yaml), then
+   check Domains (all three should read Third-Party or be gone), Websites
+   (none expected), Billing (subscriptions, invoices, the stored Visa ending
+   4012) and any Google Workspace billing (none expected; Workspace is billed
+   by Google). Eddy says yes before anything is cancelled or deleted.
+   Status 2026-10-30: transfers re-confirmed by WHOIS (IONOS SE, ui-dns
+   nameservers); the panel check waits on a sign-in.
 4. Change the Workspace primary domain to playworksnorth.com.
 
 Decide on the way: edouardmurat.com mail (fold into Workspace unless an app
