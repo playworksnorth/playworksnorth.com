@@ -119,16 +119,17 @@ Order, so no mail is lost:
 6. Audit seats: if contact@ednoka.com or the GodotHire address are separate
    paid users, fold them into aliases or groups.
 
-Status 2026-10-30: steps 1 to 3 done (2026-09-08 to 09-11, DMARC at
-p=quarantine). Step 5 done by Eddy from his phone on 2026-10-06, in a
-different form: the user became contact@playworksnorth.com (not eddy@), with
-the ednoka.com and godothire.com addresses kept as aliases, and the org was
-renamed Playworks North. Renaming the user does not change the primary
-domain. Step 4 is approved (Eddy, 2026-10-30) but not done: Admin console
-asks for a password before the Domains page opens, which is Eddy's, and the
-last invoice (2026-10-02) still names ednoka.com as the domain and customer
-ID. The invoice's "Domain" line is a cheap way to check the primary from
-Gmail after the switch. Step 6: one user only, as far as is known.
+Status 2026-10-30: done except the DMARC tightening. Steps 1 to 3 done
+2026-09-08 to 09-11 (DMARC at p=quarantine). Step 5 done by Eddy from his
+phone on 2026-10-06, in a different form: the user became
+contact@playworksnorth.com (not eddy@), with contact@ednoka.com,
+contact@godothire.com and edouard.murat@playworksnorth.com as aliases, and
+the org was renamed Playworks North. Step 4 done 2026-10-30 in Admin
+console: playworksnorth.com is primary, ednoka.com and godothire.com are
+secondary. Renaming the user does not change the primary domain; they are
+separate settings. The Workspace invoice's "Domain" line names the primary,
+a cheap check from Gmail. Step 6: one user, one Business Starter licence.
+Left: p=reject once the aggregate reports read clean.
 
 Primary-domain change is supported on Business editions, not on the legacy
 free edition or on subscriptions bought through a reseller. The site's A
