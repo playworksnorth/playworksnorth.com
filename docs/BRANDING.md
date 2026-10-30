@@ -153,7 +153,9 @@ Order:
    4012) and any Google Workspace billing (none expected; Workspace is billed
    by Google). Eddy says yes before anything is cancelled or deleted.
    Status 2026-10-30: transfers re-confirmed by WHOIS (IONOS SE, ui-dns
-   nameservers); the panel check waits on a sign-in.
+   nameservers). Eddy remembers closing the account already, so this step
+   is closed; Gmail has no closure email, so a later Squarespace charge or
+   renewal notice would mean it is still open.
 4. Change the Workspace primary domain to playworksnorth.com.
 
 Decide on the way: edouardmurat.com mail (fold into Workspace unless an app
