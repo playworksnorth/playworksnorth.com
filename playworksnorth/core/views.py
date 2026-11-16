@@ -61,7 +61,7 @@ PROJECTS = [
 ]
 
 SOCIALS = [
-    {'label': 'Bluesky', 'url': 'https://bsky.app/profile/playworksnorth.bsky.social'},
+    {'label': 'Bluesky', 'url': 'https://bsky.app/profile/playworksnorth.com'},
     {'label': 'itch.io', 'url': 'https://playworksnorth.itch.io'},
     {'label': 'GitHub', 'url': 'https://github.com/playworksnorth'},
 ]

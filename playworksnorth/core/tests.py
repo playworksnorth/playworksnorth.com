@@ -36,3 +36,27 @@ class CopyrightLineTests(TestCase):
     def test_french_footer_uses_registered_french_name(self):
         r = self.client.get('/fr/')
         self.assertContains(r, 'Studio Playworks North, Montréal.')
+
+
+class FrenchCatalogTests(TestCase):
+    """Every project card string must have a French translation. The GodotHire
+    card shipped in English on /fr/ for two months because its strings were
+    never added to the catalog."""
+
+    def test_every_project_card_is_translated(self):
+        from django.utils import translation
+        from .views import PROJECTS
+        for p in PROJECTS:
+            for key in ('kind', 'status', 'blurb'):
+                with translation.override('en'):
+                    english = str(p[key])
+                with translation.override('fr'):
+                    french = str(p[key])
+                self.assertNotEqual(french, english, f"{p['name']} {key} has no French translation")
+
+
+class SocialLinkTests(TestCase):
+    def test_bluesky_links_to_the_domain_handle(self):
+        r = self.client.get('/')
+        self.assertContains(r, 'https://bsky.app/profile/playworksnorth.com"')
+        self.assertNotContains(r, 'playworksnorth.bsky.social')
