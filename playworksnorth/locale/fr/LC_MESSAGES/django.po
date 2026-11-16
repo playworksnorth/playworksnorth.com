@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-15 19:25-0500\n"
+"POT-Creation-Date: 2026-11-15 20:29-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,10 +112,9 @@ msgstr "En développement"
 
 #: core/views.py:29
 msgid ""
-"A coaching companion that turns training plans into daily, doable steps."
-msgstr ""
-"Un compagnon d'entraînement qui transforme un plan en étapes quotidiennes "
-"réalisables."
+"A voice coach for Apex Legends. It watches your match and calls the play out "
+"loud while you play."
+msgstr "Un coach vocal pour Apex Legends. Il suit votre partie et annonce le jeu à voix haute pendant que vous jouez."
 
 #: core/views.py:31 core/views.py:49
 msgid "Site"
@@ -146,12 +145,14 @@ msgid ""
 "A job board for the Godot game engine community, connecting studios with "
 "Godot developers."
 msgstr ""
-"Un site d'offres d'emploi pour la communauté du moteur de jeu Godot, qui "
-"met en relation les studios et les développeurs Godot."
+"Un site d'offres d'emploi pour la communauté du moteur de jeu Godot, qui met "
+"en relation les studios et les développeurs Godot."
 
 #: core/views.py:56
-msgid "A quiet game about breathing, attention, and letting the noise settle."
-msgstr "Un jeu calme sur la respiration, l'attention et le bruit qui s'apaise."
+msgid ""
+"A meditation game. You sit still in a neon city for about an hour, then "
+"press one key at just the right moment."
+msgstr "Un jeu de méditation. Vous restez immobile dans une ville néon pendant environ une heure, puis vous appuyez sur une touche au bon moment."
 
 #: core/views.py:90
 #, python-format
